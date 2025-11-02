@@ -3,29 +3,13 @@
   "builds": [
     {
       "src": "main.py",
-      "use": "@vercel/python",
-      "config": {
-        "pythonVersion": "3.9",
-        "maxLambdaSize": "15mb",
-        "includeFiles": [
-          "saved_models/**/*",
-          "dataset/**/*"
-        ]
-      }
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/main.py",
-      "methods": ["GET", "POST", "OPTIONS"],
-      "headers": {
-        "Access-Control-Allow-Credentials": "true",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Authorization"
-      }
+      "dest": "/main.py"
     }
-  ],
-  "buildCommand": "bash build.sh"
+  ]
 }
