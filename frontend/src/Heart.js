@@ -5,8 +5,7 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import { Tooltip } from "react-tooltip";
 import ModelSelector from "./ModelSelector";
 import OutputPanel from "./OutputPanel";
-
-const API_URL = "http://127.0.0.1:8000";
+import { API_URL } from "./config";
 const initialFormState = {
   age: "63",
   sex: "1",
@@ -211,7 +210,7 @@ function Heart() {
               </div>
               <div className="form-group">
                 <div className="form-group-label">
-                  <label>Fasting Blood Sugar > 120 mg/dl</label>
+                  <label>Fasting Blood Sugar &gt; 120 mg/dl</label>
                 </div>
                 {loading ? (
                   <Skeleton height={48} />

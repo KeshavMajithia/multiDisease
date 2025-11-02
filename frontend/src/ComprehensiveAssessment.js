@@ -2,13 +2,15 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import { Bar } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { FiAlertTriangle, FiCheckCircle, FiInfo } from 'react-icons/fi';
+import { Tooltip } from 'react-tooltip';
 import ModelSelector from './ModelSelector';
+import OutputPanel from './OutputPanel';
+import { API_URL } from './config';
 
 // Register Chart.js components
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
-
-const API_URL = "http://127.0.0.1:8000";
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip as ChartTooltip, Legend } from 'chart.js';
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, ChartTooltip, Legend);
 
 // Define initial state for the comprehensive form
 const initialFormState = {
@@ -143,7 +145,7 @@ function ComprehensiveAssessment() {
                             {activeTab === 'cardiac' && (
                                 <div className="form-grid">
                                     <div className="form-group"><label>Chest Pain Type</label><select name="chest_pain" value={formData.chest_pain} onChange={handleChange}><option value={0}>No Pain</option><option value={1}>Typical</option><option value={2}>Atypical</option><option value={3}>Non-anginal</option></select></div>
-                                    <div className="form-group"><label>Fasting Blood Sugar > 120</label><select name="fasting_blood_sugar" value={formData.fasting_blood_sugar} onChange={handleChange}><option value={0}>No</option><option value={1}>Yes</option></select></div>
+                                    <div className="form-group"><label>Fasting Blood Sugar &gt; 120</label><select name="fasting_blood_sugar" value={formData.fasting_blood_sugar} onChange={handleChange}><option value={0}>No</option><option value={1}>Yes</option></select></div>
                                     <div className="form-group"><label>Resting ECG</label><select name="rest_ecg" value={formData.rest_ecg} onChange={handleChange}><option value={0}>Normal</option><option value={1}>ST-T Abnormality</option><option value={2}>LV Hypertrophy</option></select></div>
                                     <div className="form-group"><label>Max Heart Rate</label><input type="number" name="max_heart_rate" value={formData.max_heart_rate} onChange={handleChange}/></div>
                                     <div className="form-group"><label>Exercise Angina</label><select name="exercise_angina" value={formData.exercise_angina} onChange={handleChange}><option value={0}>No</option><option value={1}>Yes</option></select></div>
