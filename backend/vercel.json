@@ -27,6 +27,5 @@
       }
     }
   ],
-  "buildCommand": "bash build.sh",
-  "installCommand": "pip install --upgrade pip setuptools wheel"
+  "buildCommand": "bash build.sh"
 }
