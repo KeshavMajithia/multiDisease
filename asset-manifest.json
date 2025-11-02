@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/health-ai-app/static/css/main.5f269a54.css",
-    "main.js": "/health-ai-app/static/js/main.e7bfc0eb.js",
-    "static/js/453.ec0a74d3.chunk.js": "/health-ai-app/static/js/453.ec0a74d3.chunk.js",
-    "static/media/Image3.png": "/health-ai-app/static/media/Image3.70866a7e2c315921935a.png",
-    "static/media/model_accuracy_comparison.png": "/health-ai-app/static/media/model_accuracy_comparison.ce28d7ca2def6fcb1157.png",
-    "index.html": "/health-ai-app/index.html",
-    "main.5f269a54.css.map": "/health-ai-app/static/css/main.5f269a54.css.map",
-    "main.e7bfc0eb.js.map": "/health-ai-app/static/js/main.e7bfc0eb.js.map",
-    "453.ec0a74d3.chunk.js.map": "/health-ai-app/static/js/453.ec0a74d3.chunk.js.map"
+    "main.css": "/multiDisease/static/css/main.5f269a54.css",
+    "main.js": "/multiDisease/static/js/main.afad4f9b.js",
+    "static/js/453.ec0a74d3.chunk.js": "/multiDisease/static/js/453.ec0a74d3.chunk.js",
+    "static/media/Image3.png": "/multiDisease/static/media/Image3.70866a7e2c315921935a.png",
+    "static/media/model_accuracy_comparison.png": "/multiDisease/static/media/model_accuracy_comparison.ce28d7ca2def6fcb1157.png",
+    "index.html": "/multiDisease/index.html",
+    "main.5f269a54.css.map": "/multiDisease/static/css/main.5f269a54.css.map",
+    "main.afad4f9b.js.map": "/multiDisease/static/js/main.afad4f9b.js.map",
+    "453.ec0a74d3.chunk.js.map": "/multiDisease/static/js/453.ec0a74d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f269a54.css",
-    "static/js/main.e7bfc0eb.js"
+    "static/js/main.afad4f9b.js"
   ]
 }
