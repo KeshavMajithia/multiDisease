@@ -26,7 +26,7 @@
       }
     }
   ],
-  "buildCommand": "bash build.sh",
-  "installCommand": "pip install -r requirements.txt",
+  "buildCommand": "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt",
+  "installCommand": "pip install --upgrade pip setuptools wheel",
   "outputDirectory": "public"
 }
